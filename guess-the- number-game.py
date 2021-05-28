@@ -1,5 +1,8 @@
+# import the necessry libraries
 import random
 import  math
+
+# Taking user inputs for small and large numbers
 
 small = int(input("Enter a lower bound number:"))
 
@@ -9,8 +12,12 @@ a = random.randint(small,large)
 
 print("You have ",round(math.log(large-small +1 ,2)), "chances left to guess the number!")
 
+#Inintializing count to 3
+
 count = 3
 
+# Looping Through with a while loop and printing ou the results.
+    
 while count< math.log(large-small + 1,2 ):
     count+=1
     guess = int (input ("Guess a number:"))
